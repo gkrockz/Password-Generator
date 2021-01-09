@@ -1,6 +1,5 @@
 ## WorkFlow Of Program :
 <br>
-
 <h3>Generating A Strong Password:</h3>
 <p>
 <img src="Output-1.png" alt="Sample Output">
