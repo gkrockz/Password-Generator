@@ -13,7 +13,7 @@ sp_chars= "&@!$*-_#"
 Pass = lwr + sp_chars + num + upr
 strength =  input("Enter The Strength Of The Password Required - (Weak/Strong/VeryStrong) : ")
 
-// Using Ternary Operator To Fix The Length Of The Password.
+// Using Ternary Operator To Fix The Length Of The Password , Based On User Input.
 
 length = 6 if (strength == "Weak") else  12 if (strength =="Strong") else 18
 GeneratePassword(Pass,length)
