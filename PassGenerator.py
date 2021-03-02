@@ -1,19 +1,19 @@
 import random
 
-
 def GeneratePassword(Pass,length):
     Password = "".join(random.sample(Pass, length))
     print("Generated Password Is : ", Password)
-
 
 lwr = "abcdefghijklmnopqrstuvwxyz"
 upr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 num = "0123456789"
 sp_chars= "&@!$*-_#"
-Pass = lwr + sp_chars + num + upr
-strength =  input("Enter The Strength Of The Password Required - (Weak/Strong/VeryStrong) : ")
+Pass = lwr + sp_chars + num + upr      # Combining All Types Patterns.
 
-// Using Ternary Operator To Fix The Length Of The Password , Based On User Input.
+# Using Ternary Operator To Fix The Length Of The Password , Based On User Input.
+strength = input(" Enter The Strength Of The Password Required - ( Weak / Strong / Very Strong) : ")
+if strength.isalpha() == True :
+    length = 6 if (strength == "weak") else 12 if (strength =="strong") else 18
+    GeneratePassword(Pass,length)
 
-length = 6 if (strength == "Weak") else  12 if (strength =="Strong") else 18
-GeneratePassword(Pass,length)
+else : print("Please Enter Valid Input( Weak / Strong / Very Strong)")
