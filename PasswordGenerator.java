@@ -11,11 +11,11 @@ public class PasswordGenerator
 	static char[] generatePass(int len)
 	{
 		System.out.println("Your Password Is : ");
-		String Ualpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		String Lalpha= "abcdefghijklmnopqrstuvwxyz";
+		String UprChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String LwrChar = "abcdefghijklmnopqrstuvwxyz";
 		String numbers = "0123456789";
 		String symbols="!@#$&*_-.";
-		String pass = Ualpha+symbols+Lalpha;
+		String pass = UprChar+symbols+LwrChar+numbers;
 		Random rnd = new Random();
 		char[] password = new char[len];
 		for (int i = 0; i < password.length; i++) 
